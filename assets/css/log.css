@@ -1,0 +1,79 @@
+.sign-in-up .left-inner-addon {
+    position: relative;
+}
+
+.sign-in-up .left-inner-addon input {
+    padding-left: 30px;
+}
+
+.sign-in-up .left-inner-addon i {
+    position: absolute;
+    padding: 10px 12px;
+    pointer-events: none;
+}
+
+.sign-in-up .right-inner-addon {
+    position: relative;
+}
+
+.sign-in-up .right-inner-addon input {
+    padding-right: 30px;
+}
+
+.sign-in-up .right-inner-addon i {
+    position: absolute;
+    right: 0px;
+    padding: 17px 12px;
+    pointer-events: none;
+}
+
+.sign-in-up .click2select {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.sign-in-up .paywith {
+    padding: 12px 12px 0 0;
+    margin: 0;
+    font-weight: bold;
+}
+.btn-danger, .btn-danger:hover{
+  background-color: #333399 !important;
+  border-color: #333399 !important;
+}
+.btn-primary, .btn-primary:hover{
+  background-color: #3366CC !important;
+  border-color: #3366CC !important;
+}
+input[type="text"], input[type="password"], .btn{
+  border-radius: 0px;
+}
+
+.btn-primary:hover {
+    background-color: #07810b !important;
+    border-color: transparent !important;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #3a843d !important;
+    border-color: transparent;
+}
+.btn-danger, .btn-danger:hover {
+    background-color: #326764 !important;
+    border-color: #33339900 !important;
+}
+.btn-danger {
+    color: #fff;
+    background-color: #0f5b61 !important;
+    border-color: transparent;
+}
+.container.sign-in-up {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+}

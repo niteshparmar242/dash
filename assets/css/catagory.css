@@ -1,0 +1,84 @@
+input {
+    padding: 0.375rem 2rem;
+    vertical-align: middle;
+    width: 20em;
+}
+.btn-outline-danger:focus{
+    box-shadow: none;
+}
+.cat_lst button{
+    padding: 0px 15px;
+    font-size: 15px;
+}
+.cat_lst td {
+    font-size: 15px;
+    padding: 7px 0.3rem;
+}
+.sub_cat_cret {
+    display: flex;
+}
+/* Select option */
+
+  /* Reset Select */
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: #2c3e50;
+    background-image: none;
+  }
+  /* Remove IE arrow */
+  select::-ms-expand {
+    display: none;
+  }
+  /* Custom Select */
+  .select {
+    margin-right: 2px;
+    position: relative;
+    display: inline-flex;
+    width: 20em;
+    height: 3em;
+    padding: 0.375rem .5rem;
+    background: #32404d;
+    overflow: hidden;
+    border-radius: .25em;
+  }
+  select {
+    flex: 1;
+    padding: 0 .5em;
+    color: #fff;
+    cursor: pointer;
+  }
+  /* Arrow */
+  .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 1em;
+    background: #34495e;
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+  }
+  /* Transition */
+  .select:hover::after {
+    color: #f39c12;
+  }
+  
+  .sub{
+      margin-bottom: 10px;
+  }
+  .cerate_cat {
+    margin-top: 15px;
+    margin-left: -3px;
+}

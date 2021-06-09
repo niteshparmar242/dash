@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Category</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="stylesheet" href="./assets/css/dash.css">
+    <link rel="stylesheet" href="./assets/css/catagory.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js'></script>
+</head>
+<body>
+    <div class="page-wrapper chiller-theme toggled">
+        <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+          <i class="fas fa-bars"></i>
+        </a>
+        <nav id="sidebar" class="sidebar-wrapper">
+          <div class="sidebar-content">
+            <div class="sidebar-brand">
+              <a href="#">Sidebar</a>
+              <div id="close-sidebar">
+                <i class="fas fa-times"></i>
+              </div>
+            </div>
+            <div class="sidebar-header">
+              <div class="user-pic">
+                <img class="img-responsive img-rounded" src="./assets/images/user.jpg" alt="User picture">
+              </div>
+              <div class="user-info">
+                <span class="user-name">
+                  <strong>Admin</strong>
+                </span>
+                <span class="user-role">Administrator</span>
+                <span class="user-status">
+                  <i class="fa fa-circle"></i>
+                  <span>Online</span>
+                </span>
+              </div>
+            </div>
+            <!-- sidebar-header  -->
+            <div class="sidebar-search">
+              <div>
+                <div class="input-group">
+                  <input type="text" class="form-control search-menu" placeholder="Search...">
+                  <div class="input-group-append">
+                    <span class="input-group-text">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- sidebar-search  -->
+            <div class="sidebar-menu">
+              <ul>
+                <li class="header-menu">
+                  <span>General</span>
+                </li>
+                <li>
+                  <a href="dash.html">
+                    <i class="fa fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                  </a>
+                  
+                </li>
+                <li class="sidebar-dropdown">
+                  <a href="#"><i class="fa fa-tachometer-alt"></i> <span>Master</span></a>
+                  <div class="sidebar-submenu">
+                      <ul>
+                          <li>
+                              <a href="catagory.html">Catagory</a>
+                          </li>
+                          <li>
+                              <a href="sub-catagory.html">Sub-catagory</a>
+                          </li>
+                          <li>
+                              <a href="sub-sub-catagory.html">Sub-sub-catagory</a>
+                          </li>
+                      </ul>
+                  </div>
+              </li>
+                <li class="sidebar-dropdown">
+                    <a href="#"><i class="fa fa-shopping-cart"></i> <span>Product Management</span></a>
+                    <div class="sidebar-submenu">
+                        <ul>
+                            <li>
+                                <a href="add-product.html">Add Products</a>
+                            </li>
+                            <li>
+                                <a href="#">Edit Products</a>
+                            </li>
+                            <li>
+                                <a href="product-list.html">Procuct List</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="sidebar-dropdown">
+                    <a href="#"><i class="far fa-gem"></i> <span>Order Management</span></a>
+                    <div class="sidebar-submenu">
+                        <ul>
+                            <li>
+                                <a href="#">New Order</a>
+                            </li>
+                            <li>
+                                <a href="#">Active Order</a>
+                            </li>
+                            <li>
+                                <a href="#">Delivered Order</a>
+                            </li>
+                            <li>
+                                <a href="#">Cancelled Order</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="sidebar-dropdown">
+                    <a href="#"><i class="fa fa-chart-line"></i> <span>Accounts</span></a>
+                    <div class="sidebar-submenu">
+                        <ul>
+                            <li>
+                                <a href="#">Todays</a>
+                            </li>
+                            <li>
+                                <a href="#">This Month</a>
+                            </li>
+                            <li>
+                                <a href="#">This Year</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </li>
+                <li class="sidebar-dropdown">
+                    <a href="#"><i class="far fa-address-book"></i> <span>Contact Management</span></a>
+                    <div class="sidebar-submenu">
+                        <ul>
+                            <li>
+                                <a href="#">Contact Detail</a>
+                            </li>
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Trems & Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#">Return & Refund Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="sidebar-dropdown">
+                    <a href="#"><i class="fas fa-user-plus"></i> <span>Customer Management</span></a>
+                    <div class="sidebar-submenu">
+                        <ul>
+                            <li>
+                                <a href="#">New Customer</a>
+                            </li>
+                            <li>
+                                <a href="#">Active Customer</a>
+                            </li>
+                            <li>
+                                <a href="#">Inactive Customer</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- <li>
+                  <a href="#">
+                    <i class="fa fa-book"></i>
+                    <span>Documentation</span>
+                    <span class="badge badge-pill badge-primary">Beta</span>
+                  </a>
+                </li> -->
+                <li>
+                    <a href="#"><i class="fas fa-cubes"></i> <span>Stock Management</span></a>
+                    <div class="sidebar-submenu">
+                        
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-file-invoice"></i> <span>Invoice</span></a>
+                    <div class="sidebar-submenu">
+                        
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-shield-alt"></i> <span>Security Management</span></a>
+                    <div class="sidebar-submenu">
+                        
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-globe"></i> <span>Reviews</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-globe"></i> <span>Enquiry</span></a>
+                </li>
+                
+              </ul>
+            </div>
+            <!-- sidebar-menu  -->
+          </div>
+          <!-- sidebar-content  -->
+          <!-- <div class="sidebar-footer">
+            <a href="#">
+              <i class="fa fa-bell"></i>
+              <span class="badge badge-pill badge-warning notification">3</span>
+            </a>
+            <a href="#">
+              <i class="fa fa-envelope"></i>
+              <span class="badge badge-pill badge-success notification">7</span>
+            </a>
+            <a href="#">
+              <i class="fa fa-cog"></i>
+              <span class="badge-sonar"></span>
+            </a>
+            <a href="#">
+              <i class="fa fa-power-off"></i>
+            </a>
+          </div> -->
+        </nav>
+        <!-- sidebar-wrapper  -->
+        <main class="page-content">
+          <div class="container">
+            <h2>PRODUCTS</h2>
+            <hr>
+            <div class="row">
+              <div class="col-md-12">
+                
+              </div>
+              
+      
+              </div>
+            </div>
+            
+            <h5>Product List</h5>
+            <hr>
+            <div class="row">
+
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class = "card card_sale" > 
+                    <div class = "dashboard__card-widget card-body" > 
+                      <div class = "card__title" > <h5 class = "bold-text">Catagories</h5></div >
+                        <div class="cerate_cat">
+                            <table class="table table-sm cat_lst">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Serial</th>
+                                    <th scope="col">Category Name</th>
+                                    <th scope="col">Sub Category Name</th>
+                                    <th scope="col">Product Name</th>
+                                    <th scope="col"></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>Vegetables</td>
+                                    <td>Green</td>
+                                    <td>Coliflower</td>
+                                    <td>
+                                        <button type="button" class="btn btn-outline-warning">Edit</button>
+                                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                                      </td>
+                                    
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>Pulses</td>
+                                    <td>Green</td>
+                                    <td>Coliflower</td>
+                                    <td>
+                                        <button type="button" class="btn btn-outline-warning">Edit</button>
+                                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                                      </td>
+                                    
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>Fruits</td>
+                                    <td>Green</td>
+                                    <td>Coliflower</td>
+                                    <td>
+                                        <button type="button" class="btn btn-outline-warning">Edit</button>
+                                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">4</th>
+                                    <td>Vegetables</td>
+                                    <td>Green</td>
+                                    <td>Coliflower</td>
+                                    <td>
+                                        <button type="button" class="btn btn-outline-warning">Edit</button>
+                                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                                      </td>
+                                    
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">5</th>
+                                    <td>Pulses</td>
+                                    <td>Green</td>
+                                    <td>Coliflower</td>
+                                    <td>
+                                        <button type="button" class="btn btn-outline-warning">Edit</button>
+                                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                                      </td>
+                                    
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">6</th>
+                                    <td>Fruits</td>
+                                    <td>Green</td>
+                                    <td>Coliflower</td>
+                                    <td>
+                                        <button type="button" class="btn btn-outline-warning">Edit</button>
+                                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                                      </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                        
+                          
+                           
+                    </div>
+                    
+                </div>
+                
+              </div>
+            </div>
+
+                  <!-- page-wrapper -->
+            <footer class="text-center">
+              <div class="mb-2">
+                <small>
+                  © 2021 <i class="fa fa-heart" style="color:rgb(21, 255, 0)"></i><a target="_blank" href="#">
+                    Subjimandi.com
+                  </a>
+                </small>
+              </div>
+      
+            </footer>
+      
+          </div>
+      
+        </main>
+        <!-- page-content" -->
+      </div>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/esm/popper.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+      <script src="./assets/js/graph.js"></script>
+      <script>
+          $(".sidebar-dropdown > a").click(function() {
+            $(".sidebar-submenu").slideUp(200);
+            if (
+                $(this)
+                .parent()
+                .hasClass("active")
+            ) {
+                $(".sidebar-dropdown").removeClass("active");
+                $(this)
+                .parent()
+                .removeClass("active");
+            } else {
+                $(".sidebar-dropdown").removeClass("active");
+                $(this)
+                .next(".sidebar-submenu")
+                .slideDown(200);
+                $(this)
+                .parent()
+                .addClass("active");
+            }
+        });
+
+$("#close-sidebar").click(function() {
+  $(".page-wrapper").removeClass("toggled");
+});
+$("#show-sidebar").click(function() {
+  $(".page-wrapper").addClass("toggled");
+});
+
+
+      </script>
+     
+</body>
+</html>
